@@ -23,7 +23,7 @@ spec:
     spec:
       containers: 
       - name: video-streaming
-        image: $CONTAINER_REGISTRY/video-streaming:$VERSION
+        image: sk2000.azurecr.io/video-streaming:1
         imagePullPolicy: IfNotPresent
         env:
         - name: PORT
@@ -41,3 +41,5 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 4000
+
+
